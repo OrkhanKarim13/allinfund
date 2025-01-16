@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./assest/js/index.js"></script>
+    <link rel="stylesheet" href="./assest/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <nav class="navBar">
+            <div class="logo">
+              <a href="./index.html">
+                <img src="./assest/images/allinfund.svg" alt="logo" />
+              </a>
+            </div>
+            <div class="formLeftSide">
+              <div class="dropdown">
+                <div class="select">
+                  <span class="selected">ENG</span>
+                  <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                  <li>AZ</li>
+                  <li>RU</li>
+                  <li class="active">ENG</li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+   <main>
+    <section class="register">
+        <div class="registerContent"> 
+            <div class="formTitle"><h2>Lets Create an account!  </h2>  <span class="page">1/3</span></div>
+            <div class="socialBtns">
+                <div class="socialBtn">
+                    <a href="#"><img src="./assest/images/Google - Original.svg" alt="google icon"> Google</a>
+                </div>
+                <div class="socialBtn">
+                    <a href="#"><img src="./assest/images/linkedin (2).svg" alt="linkedin icon"> Google</a>
+                </div>
+            </div>
+            <div class="signIn">
+                <p class="question">Have an account?</p><a href="#">Sign in</a>
+            </div> 
+            <form  class="form">
+                <div class="formPart">
+                    <label for="name-surname">
+                        Name Surname
+                    </label>
+                    <input id="name-surname" type="text" placeholder="John Doe" maxlength="30">
+                </div>
+                <div class="formPart">
+                    <label for="mail">
+                       Mail
+                    </label>
+                    <input type="email" placeholder="example@mail.com" maxlength="40">
+                </div>
+                <div class="formSelect">
+                    <div class="formLeftSide">
+                        <div class="dropdown">
+                            <div class="select">
+                                <label for="country">Country</label>
+                              <span id="country" class="selected"></span>
+                              <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                              <li>England</li>
+                              <li>Italy</li>
+                              <li class="active">America</li>
+                            </ul>
+                          </div>
+                    </div>
+                    <div class="formLeftSide">
+                        <div class="dropdown">
+                            <div class="select">
+                                <label for="country">City</label>
+                              <span id="country" class="selected"></span>
+                              <div class="caret"></div>
+                            </div>
+                            <ul class="menu">
+                              <li>Malibu</li>
+                              <li>Martinez</li>
+                              <li class="active">Los Angeles</li>
+                            </ul>
+                          </div>
+                    </div>
+                </div>
+                <div class="formBtn">
+                    <button type="submit" class="btn">Continue</button>
+                </div>
+
+            </form>
+            <div class="formText">One more thing</div>
+            <button class="investBtn">Became an investor</button>
+        </div>
+    </section>
+   </main>
+</body>
+</html>

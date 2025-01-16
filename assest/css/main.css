@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.header {
+  padding: 40px 0;
+  background-color: #253439;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formLeftSide {
+  border-radius: 16px;
+  background-color: #33484f;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formLeftSide .dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.formLeftSide .dropdown .select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.formLeftSide .dropdown .select .selected {
+  display: block;
+}
+
+.formLeftSide .dropdown .select .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-top: 5px solid #fff;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+.formLeftSide .dropdown .menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  display: none;
+  margin: 0;
+  border-radius: 8px;
+  background: #33484f;
+  color: #fff;
+}
+
+.formLeftSide .dropdown .menu li {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.formLeftSide .dropdown .menu li.active {
+  border-radius: 8px;
+}
+
+.formLeftSide .dropdown.open .menu {
+  display: block;
+}
+
+.formLeftSide input {
+  width: 100%;
+  padding: 20px 32px;
+  border-radius: 8px;
+  background: #222426;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.homeTitle {
+  font-size: 32px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.homecardBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card-container {
+  position: relative;
+  width: 32%;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 20px 32px;
+  background-color: #fff;
+  border-radius: 20px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%, 40% 80%, 0 80%);
+}
+
+.card-description {
+  height: 100px;
+}
+
+.card-container:nth-child(1) > .card {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%, 35% 80%, 0 80%);
+}
+
+.card-container:nth-child(2) > .card {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 45% 100%, 45% 80%, 0 80%);
+}
+
+.card-icon,
+.card-title {
+  margin-bottom: 12px;
+}
+.cardBtn {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+.cardBtn a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 13px;
+  color: #000;
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: 0.4s ease all;
+}
+
+.cardBtn a:hover {
+  background-color: #8b949b;
+  color: #fff;
+  transition: 0.4s ease all;
+}
+
+@media (max-width: 700px) {
+
+  .header{
+    margin: 6px;
+    margin-bottom: 0;
+    padding: 17px 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+
+  .container{
+    width: 100%;
+    padding: 0 13px ;
+  }
+
+  .homecardBox {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+  }
+
+  .formLeftSide .dropdown .select {
+    padding: 10px;
+  }
+
+  .homeTitle {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    margin-bottom: 32px;
+  }
+
+  .card-description {
+    font-size: 12px;
+  }
+
+  .card-container {
+    position: relative;
+  }
+
+  .card-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  .card-container:nth-child(1) > .card {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 40% 100%, 40% 70%, 0 70%);
+  }
+  .card-container:nth-child(2) > .card {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 55% 100%, 55% 70%, 0 70%);
+  }
+  .card-container:nth-child(3) > .card {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 70%, 0 70%);
+  }
+}
+
+/* register css */
+
+.register {
+  width: 100%;
+background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registerContent {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 50px 120px;
+  background-color: #253439;
+}
+
+.formTitle {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.formTitle > h2,
+.page {
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.socialBtns {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.socialBtn > a {
+  display: flex;
+  align-items: center;
+  border: 2px solid #fff;
+  padding: 16px 60px;
+  border-radius: 16px;
+  gap: 20px;
+  color: #fff;
+}
+
+.signIn {
+  display: flex;
+  gap: 15px;
+}
+
+.question {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff5d;
+}
+
+.signIn > a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formPart {
+  display: flex;
+  flex-direction: column;
+}
+
+.formPart > label {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+input {
+  padding: 18px 24px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+.formSelect {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.formSelect > .formLeftSide {
+  width: 50%;
+  background-color: #fff;
+}
+
+.formSelect .formLeftSide .select,
+.caret {
+  color: #253439;
+}
+
+.formSelect .dropdown .select .caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 5px;
+  vertical-align: middle;
+  border-top: 5px solid black;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+}
+
+
+
+.formBtn {
+  width: 100%;
+}
+
+.formBtn > .btn {
+  width: 100%;
+  padding: 19px 0 19px 0;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 16px;
+  background-color: #ffffff35;
+  cursor: pointer;
+}
+
+
+.formText{
+  text-align: center;
+  font-size: 10px;
+  color: #ffffff50;
+  position: relative;
+}
+.formText::after{
+  content: "";
+  background-color: #ffffff50;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  height: 1px;
+  width: 40%;
+}
+
+
+.formText::before{
+  content: "";
+  background-color: #ffffff50;
+  position: absolute;
+  right: 0;
+  bottom: 5px;
+  height: 1px;
+  width: 40%;
+}
+
+.investBtn{
+  width: 100%;
+  padding: 19px 0 19px 0;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 16px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+
+@media(max-width:700px){
+  .registerContent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 6px 6px 6px ;
+    padding: 13px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+}
