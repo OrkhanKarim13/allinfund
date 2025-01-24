@@ -48,15 +48,29 @@
               /></a>
             </div>
             <div class="headerMobileIcon">
-              <a href="#">
-                <img src="./assest/images/user.svg" alt="user">
-              </a>
-              <a href="#">
-                <img src="./assest/images/Hamburger menu.svg" alt="mobile-menu">
-              </a>
+              <div>
+                <a href="#">
+                  <img src="./assest/images/user.svg" alt="user" />
+                </a>
+              </div>
+              <div id="toggleDownMenu">
+                <img
+                  src="./assest/images/Hamburger menu.svg"
+                  alt="mobile-menu"
+                />
+              </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="down-Menu">
+        <ul class="navList-mob">
+          <li class="navItem"><a href="#">Products</a></li>
+          <li class="navItem"><a href="#">Solutions</a></li>
+          <li class="navItem"><a href="#">Resources</a></li>
+          <li class="navItem"><a href="#">Pricing</a></li>
+          <li class="navItem"><a href="#">Donation</a></li>
+        </ul>
       </div>
     </header>
     <main>
@@ -71,6 +85,10 @@
                 We connect groundbreaking startups with the resources,
                 mentorship, and funding they need to succeed.
               </p>
+            </div>
+            <div class="startups-mob">
+              <img src="./assest/images/circle.svg" alt="icon" />
+              <a href="#">1200+ startups here</a>
             </div>
             <div class="homeVectors">
               <div class="leftVector">
@@ -109,6 +127,64 @@
           </div>
         </div>
       </section>
+
+      <swiper-container
+        class="mySwiper"
+        space-between="10"
+        slides-per-view="auto"
+      >
+        <swiper-slide
+          ><div class="card-container">
+            <div class="card">
+              <div class="card-icon">
+                <img src="./assest/images/card-icon.svg" alt="Lightbulb Icon" />
+              </div>
+              <h2 class="card-title">Start Kickstarting!</h2>
+              <p class="card-description">
+                Improve video-conferencing with natural eye-to-eye contact with
+                our next-gen middle-screen webcam.
+              </p>
+            </div>
+            <div class="cardBtn">
+              <a href="./index.html">View projects →</a>
+            </div>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><div class="card-container">
+            <div class="card">
+              <div class="card-icon">
+                <img src="./assest/images/corona.svg" alt="Lightbulb Icon" />
+              </div>
+              <h2 class="card-title">Became a Crowdfunder!</h2>
+              <p class="card-description">
+                Improve video-conferencing with natural eye-to-eye contact with
+                our next-gen middle-screen webcam.
+              </p>
+            </div>
+            <div class="cardBtn">
+              <a href="./index.html">View projects →</a>
+            </div>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><div class="card-container">
+            <div class="card">
+              <div class="card-icon">
+                <img src="./assest/images/heart.svg" alt="Lightbulb Icon" />
+              </div>
+              <h2 class="card-title">Donations with love</h2>
+              <p class="card-description">
+                Improve video-conferencing with natural eye-to-eye contact with
+                our next-gen middle-screen webcam.
+              </p>
+            </div>
+            <div class="cardBtn">
+              <a href="./index.html">View projects →</a>
+            </div>
+          </div></swiper-slide
+        >
+      </swiper-container>
 
       <section class="home">
         <div class="container">
@@ -178,15 +254,25 @@
               <img src="./assest/images/question.svg" alt="icon" />
             </div>
           </div>
-          <div class="lunches">
-            <div class="cardBox">
+          <div class="lunchesHeader">
+            <h3>Weekly lunches</h3>
+            <a href="#">View more →</a>
+          </div>
+          <!-- card slider -->
+
+          <swiper-container
+            class="mySwiper"
+            space-between="10"
+            slides-per-view="auto"
+          >
+            <swiper-slide>
               <div class="lunchCard">
                 <div class="card-image">
-                  <img src="./assest/images/image.png" alt="product" />
+                  <img src="./assest/images/lunch-img-4.png" alt="product" />
                   <span class="favorite"
                     ><img src="./assest/images/Heart-gray.svg" alt="icon"
                   /></span>
-                  <div class="category-name"> Category name</div>
+                  <div class="category-name">Category name</div>
                 </div>
                 <div class="cardInfo">
                   <h4 class="cardTitle">
@@ -209,7 +295,193 @@
                     <img src="./assest/images/loaded.svg" alt="load" />
                   </div>
                   <div class="launching">
-                    <span class="soon">launching soon</span> <span class="funding">Funding</span>
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
+                  </div>
+                </div>
+              </div></swiper-slide
+            >
+            <swiper-slide>
+              <div class="lunchCard">
+                <div class="card-image">
+                  <img src="./assest/images/lunch-img-4.png" alt="product" />
+                  <span class="favorite"
+                    ><img src="./assest/images/Heart-gray.svg" alt="icon"
+                  /></span>
+                  <div class="category-name">Category name</div>
+                </div>
+                <div class="cardInfo">
+                  <h4 class="cardTitle">
+                    Center Cam V2.0: a better middle-screen webcam
+                  </h4>
+                  <p class="cardText">
+                    Improve video-conferencing with natural eye-to-eye contact
+                    with our next-gen middle-screen webcam.
+                  </p>
+                  <div class="stat">
+                    <div class="count-stat">
+                      <div>
+                        $ <span class="count">20456</span>
+                        <span class="raised">raised</span>
+                      </div>
+                      <p><span class="percent">86</span>%</p>
+                    </div>
+                  </div>
+                  <div class="load">
+                    <img src="./assest/images/loaded.svg" alt="load" />
+                  </div>
+                  <div class="launching">
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
+                  </div>
+                </div>
+              </div></swiper-slide
+            >
+            <swiper-slide>
+              <div class="lunchCard">
+                <div class="card-image">
+                  <img src="./assest/images/lunch-img-4.png" alt="product" />
+                  <span class="favorite"
+                    ><img src="./assest/images/Heart-gray.svg" alt="icon"
+                  /></span>
+                  <div class="category-name">Category name</div>
+                </div>
+                <div class="cardInfo">
+                  <h4 class="cardTitle">
+                    Center Cam V2.0: a better middle-screen webcam
+                  </h4>
+                  <p class="cardText">
+                    Improve video-conferencing with natural eye-to-eye contact
+                    with our next-gen middle-screen webcam.
+                  </p>
+                  <div class="stat">
+                    <div class="count-stat">
+                      <div>
+                        $ <span class="count">20456</span>
+                        <span class="raised">raised</span>
+                      </div>
+                      <p><span class="percent">86</span>%</p>
+                    </div>
+                  </div>
+                  <div class="load">
+                    <img src="./assest/images/loaded.svg" alt="load" />
+                  </div>
+                  <div class="launching">
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
+                  </div>
+                </div>
+              </div></swiper-slide
+            >
+            <swiper-slide>
+              <div class="lunchCard">
+                <div class="card-image">
+                  <img src="./assest/images/lunch-img-4.png" alt="product" />
+                  <span class="favorite"
+                    ><img src="./assest/images/Heart-gray.svg" alt="icon"
+                  /></span>
+                  <div class="category-name">Category name</div>
+                </div>
+                <div class="cardInfo">
+                  <h4 class="cardTitle">
+                    Center Cam V2.0: a better middle-screen webcam
+                  </h4>
+                  <p class="cardText">
+                    Improve video-conferencing with natural eye-to-eye contact
+                    with our next-gen middle-screen webcam.
+                  </p>
+                  <div class="stat">
+                    <div class="count-stat">
+                      <div>
+                        $ <span class="count">20456</span>
+                        <span class="raised">raised</span>
+                      </div>
+                      <p><span class="percent">86</span>%</p>
+                    </div>
+                  </div>
+                  <div class="load">
+                    <img src="./assest/images/loaded.svg" alt="load" />
+                  </div>
+                  <div class="launching">
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
+                  </div>
+                </div>
+              </div></swiper-slide
+            >
+            <swiper-slide>
+              <div class="lunchCard">
+                <div class="card-image">
+                  <img src="./assest/images/lunch-img-4.png" alt="product" />
+                  <span class="favorite"
+                    ><img src="./assest/images/Heart-gray.svg" alt="icon"
+                  /></span>
+                  <div class="category-name">Category name</div>
+                </div>
+                <div class="cardInfo">
+                  <h4 class="cardTitle">
+                    Center Cam V2.0: a better middle-screen webcam
+                  </h4>
+                  <p class="cardText">
+                    Improve video-conferencing with natural eye-to-eye contact
+                    with our next-gen middle-screen webcam.
+                  </p>
+                  <div class="stat">
+                    <div class="count-stat">
+                      <div>
+                        $ <span class="count">20456</span>
+                        <span class="raised">raised</span>
+                      </div>
+                      <p><span class="percent">86</span>%</p>
+                    </div>
+                  </div>
+                  <div class="load">
+                    <img src="./assest/images/loaded.svg" alt="load" />
+                  </div>
+                  <div class="launching">
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
+                  </div>
+                </div>
+              </div></swiper-slide
+            >
+          </swiper-container>
+
+          <!-- end card slider -->
+
+          <div class="lunches">
+            <div class="cardBox">
+              <div class="lunchCard">
+                <div class="card-image">
+                  <img src="./assest/images/image.png" alt="product" />
+                  <span class="favorite"
+                    ><img src="./assest/images/Heart-gray.svg" alt="icon"
+                  /></span>
+                  <div class="category-name">Category name</div>
+                </div>
+                <div class="cardInfo">
+                  <h4 class="cardTitle">
+                    Center Cam V2.0: a better middle-screen webcam
+                  </h4>
+                  <p class="cardText">
+                    Improve video-conferencing with natural eye-to-eye contact
+                    with our next-gen middle-screen webcam.
+                  </p>
+                  <div class="stat">
+                    <div class="count-stat">
+                      <div>
+                        $ <span class="count">20456</span>
+                        <span class="raised">raised</span>
+                      </div>
+                      <p><span class="percent">86</span>%</p>
+                    </div>
+                  </div>
+                  <div class="load">
+                    <img src="./assest/images/loaded.svg" alt="load" />
+                  </div>
+                  <div class="launching">
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
                   </div>
                 </div>
               </div>
@@ -219,7 +491,7 @@
                   <span class="favorite"
                     ><img src="./assest/images/Heart-gray.svg" alt="icon"
                   /></span>
-                  <div class="category-name"> Category name</div>
+                  <div class="category-name">Category name</div>
                 </div>
                 <div class="cardInfo">
                   <h4 class="cardTitle">
@@ -242,7 +514,8 @@
                     <img src="./assest/images/loaded.svg" alt="load" />
                   </div>
                   <div class="launching">
-                    <span class="soon">launching soon</span> <span class="funding">Funding</span>
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
                   </div>
                 </div>
               </div>
@@ -252,7 +525,7 @@
                   <span class="favorite"
                     ><img src="./assest/images/Heart-gray.svg" alt="icon"
                   /></span>
-                  <div class="category-name"> Category name</div>
+                  <div class="category-name">Category name</div>
                 </div>
                 <div class="cardInfo">
                   <h4 class="cardTitle">
@@ -275,7 +548,8 @@
                     <img src="./assest/images/loaded.svg" alt="load" />
                   </div>
                   <div class="launching">
-                    <span class="soon">launching soon</span> <span class="funding">Funding</span>
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
                   </div>
                 </div>
               </div>
@@ -285,7 +559,7 @@
                   <span class="favorite"
                     ><img src="./assest/images/Heart-gray.svg" alt="icon"
                   /></span>
-                  <div class="category-name"> Category name</div>
+                  <div class="category-name">Category name</div>
                 </div>
                 <div class="cardInfo">
                   <h4 class="cardTitle">
@@ -308,8 +582,109 @@
                     <img src="./assest/images/loaded.svg" alt="load" />
                   </div>
                   <div class="launching">
-                    <span class="soon">launching soon</span> <span class="funding">Funding</span>
+                    <span class="soon">launching soon</span>
+                    <span class="funding">Funding</span>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="network">
+        <div class="container">
+          <div class="lunchesHeader">
+            <h3>Networking Clubs</h3>
+            <a href="#">View more →</a>
+          </div>
+          <div class="homecardBox">
+            <div class="card-container">
+              <div class="card-Image"></div>
+              <div class="card-top"></div>
+              <div class="card-content">
+                <h4 class="card-title primaryTitle">
+                  ICESCO Accelerator - National Final Ceremony
+                </h4>
+                <p class="location">Baku, Azerbaijan</p>
+                <div class="card-stats">
+                  <div class="stat-part"><b> 467</b> Members</div>
+                  <div class="stat-part"><b>12</b> Project</div>
+                  <div class="stat-part"><b>3</b> years</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-Image"></div>
+              <div class="card-top"></div>
+              <div class="card-content">
+                <h4 class="card-title primaryTitle">
+                  ICESCO Accelerator - National Final Ceremony
+                </h4>
+                <p class="location">Baku, Azerbaijan</p>
+                <div class="card-stats">
+                  <div class="stat-part">467 Members</div>
+                  <div class="stat-part">12 Project</div>
+                  <div class="stat-part">3 years</div>
+                </div>
+              </div>
+            </div>
+            <div class="card-container">
+              <div class="card-Image"></div>
+              <div class="card-top"></div>
+              <div class="card-content">
+                <h4 class="card-title primaryTitle">
+                  ICESCO Accelerator - National Final Ceremony
+                </h4>
+                <p class="location">Baku, Azerbaijan</p>
+                <div class="card-stats">
+                  <div class="stat-part">467 Members</div>
+                  <div class="stat-part">12 Project</div>
+                  <div class="stat-part">3 years</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="vector"></section>
+      <section class="cardGallery">
+        <div class="container">
+          <div class="galleryBox">
+            <div class="create-card">
+              <div class="card-Content">
+                <h3 class="card-header">
+                  Meet Creators and Supporters Like You!
+                </h3>
+                <p class="card-Description">
+                  Connect with like-minded individuals who share your passion
+                  and goals. Whether you're a creator or a supporter, this is
+                  the space to collaborate, innovate, and grow together."
+                </p>
+                <div class="card-btn">
+                  <a href="#">Create Your Networking </a>
+                </div>
+              </div>
+              <div class="card-cover"></div>
+            </div>
+            <div class="row">
+              <div class="galleryCard">
+                <div class="gallery-card-img">
+                  <img src="./assest/images/image 25.png" alt="" />
+                </div>
+                <h4 class="gallery-card-title">
+                  Take Your Career One Step Further: Sign Up Now!
+                </h4>
+                <div class="galleryCardBtn"><a href="#">Sign Up!</a></div>
+              </div>
+              <div class="galleryCard">
+                <div class="gallery-card-img">
+                  <img src="./assest/images/image 26.png" alt="" />
+                </div>
+                <h4 class="gallery-card-title">
+                  Be Part of a Community Where Everyone Matters!
+                </h4>
+                <div class="galleryCardBtn">
+                  <a href="#">Create Your Community</a>
                 </div>
               </div>
             </div>
@@ -318,5 +693,7 @@
       </section>
     </main>
     <footer></footer>
+    <script src="./assest/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
