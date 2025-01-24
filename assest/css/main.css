@@ -642,6 +642,13 @@ input {
   color: #253439;
 }
 
+.header-buttons > a {
+  background-color: #fff;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: #253439;
+}
+
 .lunchesHeader > h3 {
   font-size: 32px;
   line-height: 32px;
@@ -684,7 +691,7 @@ input {
 .lunchCard {
   display: flex;
   flex-direction: column;
-  width: 280px;
+  width: 288px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -788,6 +795,7 @@ html,
 body {
   position: relative;
   height: 100%;
+  background-color: #f6f1ee;
 }
 
 body {
@@ -893,25 +901,27 @@ swiper-slide {
 }
 
 .vector {
-  width: 100%;
-}
-
-.vector > img {
-  width: 100%;
-}
-
-.vector {
   height: 90px;
   width: 100%;
-  background-image: url(../images/Vector\ 7.svg);
+  background-image: url("../images/Vector\ 7.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.vector-bottom {
+  height: 90px;
+  width: 100%;
+  background-image: url("../images/Frame\ 1000006555.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* start cardGallery section */
 
 .cardGallery {
   width: 100%;
   padding: 50px 0;
+  border: 2px solid #253439;
   background-color: #253439;
 }
 
@@ -1020,6 +1030,64 @@ swiper-slide {
   color: #253439;
 }
 
+
+
+/* start event section */
+
+
+.events{
+width: 100%;
+padding: 50px 0;
+}
+
+.event-card{
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 12px;
+}
+
+.event-card-image{
+  height: 395px;
+  border-radius: 12px;
+  background-color: #9747FF;
+}
+
+
+.event-card-title{
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  width: 90%;
+}
+
+.event-date{
+  background-color: #f6f1ee;
+  color: #253439;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  position: absolute;
+  left: 0;
+  bottom: 85px;
+  padding: 12px;
+}
+
+
+.clup-name{
+  display: flex;
+  gap: 12px;
+}
+
+
+.clup-name>img{
+  width: 20px;
+  height: 20px;
+  
+}
+
+
 @media (max-width: 762px) {
   .header {
     margin: 6px;
@@ -1059,9 +1127,9 @@ swiper-slide {
     gap: 30px;
   }
 
-.home{
-  padding: 20px 0;
-}
+  .home {
+    padding: 20px 0;
+  }
 
   .card-container {
     position: relative;
@@ -1115,6 +1183,14 @@ swiper-slide {
     align-items: center;
   }
 
+  .cardGallery {
+    position: relative;
+  }
+
+  .create-card {
+    height: 300px;
+  }
+
   .gallery-card-img {
     display: flex;
     align-items: center;
@@ -1128,6 +1204,7 @@ swiper-slide {
 
   .card-cover {
     width: 100%;
+    height: 300px;
     background-position: left;
     background-size: cover;
     border-radius: 20px;
@@ -1136,13 +1213,14 @@ swiper-slide {
   .weeklyTitle > p {
     padding: 0 16px;
     font-size: 18px;
+    text-align: center;
   }
   .buttonBoxRow {
     display: none;
   }
 
   .lunchesHeader {
-
+    margin-top: 32px;
     padding: 0 16px;
   }
 
@@ -1205,6 +1283,9 @@ swiper-slide {
     flex-wrap: nowrap;
   }
 
+  .vector {
+    transform: translateY(20px);
+  }
 
   .network {
     width: 100%;
