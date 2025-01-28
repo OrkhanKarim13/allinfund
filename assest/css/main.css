@@ -261,10 +261,6 @@ section {
   gap: 24px;
 }
 
-
-
-
-
 .home-card-box {
   width: 100%;
 }
@@ -277,8 +273,6 @@ section {
   gap: 20px;
   background-color: #f6f1ee;
 }
-
-
 
 .home-card {
   width: 31%;
@@ -318,17 +312,14 @@ section {
 
 .home-card-title {
   width: 100%;
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .home-card-title > h3 {
-
   color: #253439;
   font-size: 32px;
 }
-
-
 
 .home-card-bottom {
   background-color: transparent;
@@ -368,12 +359,6 @@ justify-content: space-between;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
-
-
-
-
-
-
 
 .startups-mob {
   display: none;
@@ -952,13 +937,9 @@ swiper-slide > .idea-card {
   width: 100%;
 }
 
-
 swiper-slide > .home-card {
   width: 100%;
 }
-
-
-
 
 swiper-slide img {
   display: block;
@@ -1250,10 +1231,7 @@ swiper-slide {
 
 .card-info {
   padding: 24px;
-
 }
-
-
 
 .card-Title {
   font-size: 16px;
@@ -1262,13 +1240,11 @@ swiper-slide {
   margin-bottom: 12px;
 }
 
-.project-btn{
+.project-btn {
   position: absolute;
   bottom: 15px;
   left: 5px;
-
 }
-
 
 .project-btn > a {
   background-color: #253439;
@@ -1305,7 +1281,8 @@ swiper-slide {
     display: none;
   }
 
-  .cardBox, .home-content {
+  .cardBox,
+  .home-content {
     display: none;
   }
 
@@ -1407,8 +1384,6 @@ swiper-slide {
   .buttonBoxRow {
     display: none;
   }
-
-
 
   .lunchesHeader > h3 {
     font-size: 20px;
@@ -1521,11 +1496,10 @@ swiper-slide {
     gap: 10px;
   }
 
-  .cover-img{
+  .cover-img {
     padding: 15px 0;
   }
 }
-
 
 @media (max-width: 1024px) {
   .home-card {
@@ -1541,13 +1515,27 @@ swiper-slide {
   .home-card-title > h3 {
     font-size: 24px; /* Smaller font for titles */
   }
+  .home-card-header::after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    bottom: -14%;
+    width: 5%;
+    height: 14%;
+    background-color: #f6f1ee;
+    border-radius: 50%;
+    box-shadow: 10px -10px 0 #fff;
+  }
 
   .home-card-description {
     font-size: 12px; /* Adjust text size */
   }
 
   .home-card-btn {
-    height: 50px;
-    font-size: 14px;
+    width: 60%;
+    font-size: 13px;
+  }
+  .empty {
+    width: 40%;
   }
 }
