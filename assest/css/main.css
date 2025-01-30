@@ -1221,6 +1221,7 @@ swiper-slide {
   height: 50px;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   background-color: transparent;
 }
 
@@ -1253,17 +1254,7 @@ color: #253439;
 }
 
 
-/* .card-info::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom:12.6%;
-  width: 13%;
-  height: 7%;
-  background-color: #fff;
-  border-radius: 50%;
-  box-shadow: -10px 10px 0 #253439;
-} */
+
 
 
 
@@ -1283,6 +1274,10 @@ color: #253439;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+
+  top: 8px;
+  right: 8px;
 }
 
 .card-info {
@@ -1525,11 +1520,28 @@ color: #253439;
     position: relative;
   }
 
-  .card-icon {
+  .card-info::after {
+    content: "";
     position: absolute;
-    right: 0;
-    bottom: 0;
+    left:51%;
+    bottom:5%;
+    width: 9%;
+    height: 5%;
+    background-color: #253439;
+    border-radius: 50%;
+    box-shadow: 10px -10px 0 white;
   }
+
+
+.idea-card-btn{
+  width: 54%;
+}
+
+.idea-card-btn>a{
+font-weight: 600;
+  font-size: 13px;
+}
+
 
   .card-container:nth-child(1) > .card {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 50% 80%, 0 80%);
