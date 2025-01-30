@@ -358,7 +358,6 @@ width: 100%;
 .empty {
   background-color: #fff;
   width: 50%;
-
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -933,7 +932,7 @@ swiper-slide > .lunchCard {
 }
 
 swiper-slide > .event-card {
-  width: 100%;
+  width: 90%;
 }
 
 swiper-slide > .idea-card {
@@ -1213,10 +1212,62 @@ swiper-slide {
 
 .idea-card {
   width: 288px;
-  background-color: #fff;
   position: relative;
   border-radius: 24px;
 }
+
+
+.idea-card-bottom{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+}
+
+.idea-card-btn{
+  width: 50%;
+  border: 10px solid #253439;
+background-color: #fff;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.idea-card-btn>a{
+  width: 100%;
+  text-align: center;
+color: #253439;
+}
+
+.card-info::after {
+  content: "";
+  position: absolute;
+  left: 40%;
+  bottom:5.5%;
+  width: 10%;
+  height: 7%;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 10px -10px 0 #fff;
+}
+
+
+/* .card-info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom:12.6%;
+  width: 13%;
+  height: 7%;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: -10px 10px 0 #253439;
+} */
+
+
+
+
 
 .card-img {
   background-color: #e3f9d3;
@@ -1236,6 +1287,8 @@ swiper-slide {
 
 .card-info {
   padding: 24px;
+  background-color: #fff;
+  border-bottom-left-radius: 20px;
 }
 
 .card-Title {
